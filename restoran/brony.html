@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Бронирование столика</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <style>
+        
+        body {
+            background-image: url(brony-img.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+             -moz-background-size: cover;
+              -o-background-size: cover;
+                background-size: cover;
+
+
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], select {
+            width: 85%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .back
+        {
+            
+            position: relative;
+            left: 130px;
+            top: 25px; 
+            text-decoration: none;
+            
+        }
+        .nav-item:hover
+        {
+            transition: color 0.3s linear;
+            color: red;
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: black;
+            background-color: orange;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class ="back">
+        <div class ="backtrans">
+    <a class='nav-item block' href="index.html">НАЗАД</a>
+</div></div>
+    <div class="container">
+        <h1>Бронирование столика</h1>
+        <form action="booking.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+
+            <label for="date">Дата:</label>
+            <input type="date" name="date" id="date" required>
+
+            <label for="time">Время:</label>
+            <input type="time" name="time" id="time" required>
+
+            <label for="table">Столик:</label>
+            <select name="table" id="table" required>
+                <option value="table1">Столик 1</option>
+                <option value="table2">Столик 2</option>
+                <option value="table3">Столик 3</option>
+                <option value="table4">Столик 4</option>
+                <option value="table4">Столик 5</option>
+            </select>
+
+            <input type="submit" value="Забронировать">
+        </form>
+    </div>
+</body>
+</html>
+
